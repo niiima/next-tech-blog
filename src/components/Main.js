@@ -24,9 +24,7 @@ export default function MyAppMain() {
 
       <div className='wrap'>
         <div className='title'>
-          <div
-            className=' w-full'
-            style={{ direction: "rtl", lineHeight: 1.5 }}>
+          <div className='w-full' style={{ direction: "rtl", lineHeight: 1.5 }}>
             <h1 className='text-right m-0 pr-16'>الهام</h1>
             {/* <h2 className='text-center m-0 '>و</h2> */}
             <img src='/fprint.png' className='heart-logo mx-auto' />
