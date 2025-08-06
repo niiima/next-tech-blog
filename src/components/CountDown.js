@@ -133,23 +133,27 @@ const Countdown = () => {
   }
 
   return (
-    <div className='text-nastealigh flex justify-center space-x-6 text-center font-mono text-gray-800'>
+    <div className='text-nastealigh pt-18 flex justify-center space-x-6 text-center font-mono text-gray-800'>
       <div className='p-4 bg-gray-100 rounded-lg shadow-lg w-20'>
-        <div className='text-4xl font-bold text-pink-600'>{timeLeft.days}</div>
+        <div className='text-4xl font-bold text-purple-400'>
+          {timeLeft.days}
+        </div>
         <div className='uppercase text-sm'>روز</div>
       </div>
       <div className='p-4 bg-gray-100 rounded-lg shadow-lg w-20'>
-        <div className='text-4xl font-bold text-pink-600'>{timeLeft.hours}</div>
+        <div className='text-4xl font-bold text-purple-400'>
+          {timeLeft.hours}
+        </div>
         <div className='uppercase text-sm'>ساعت</div>
       </div>
       <div className='p-4 bg-gray-100 rounded-lg shadow-lg w-20'>
-        <div className='text-4xl font-bold text-pink-600'>
+        <div className='text-4xl font-bold text-purple-400'>
           {timeLeft.minutes}
         </div>
         <div className='uppercase text-sm'>دقیقه</div>
       </div>
       <div className='p-4 bg-gray-100 rounded-lg shadow-lg w-20'>
-        <div className='text-4xl font-bold text-pink-600'>
+        <div className='text-4xl font-bold text-purple-400'>
           {timeLeft.seconds}
         </div>
         <div className='uppercase text-sm'>ثانیه</div>

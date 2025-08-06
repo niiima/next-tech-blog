@@ -25,17 +25,18 @@ export default function MyAppMain() {
       <div className='wrap'>
         <div className='title'>
           <div
-            className='flex justify-between items-center w-full'
+            className=' w-full'
             style={{ direction: "rtl", lineHeight: 1.5 }}>
             <h1 className='text-right m-0 pr-16'>الهام</h1>
             {/* <h2 className='text-center m-0 '>و</h2> */}
-            <img src='/fprint.png' className='heart-logo' />
-            <h1 className='text-left m-0 pl-5'>نیما</h1>
+            <img src='/fprint.png' className='heart-logo mx-auto' />
+            <h1 className='text-left m-0 pl-2'>نیما</h1>
           </div>
-          <h3>29/8/2025</h3>
+
           <Countdown />
           <h3>هفتم شهریور هزارو چهارصد و چهار</h3>
           {/* <div className='rings'></div> */}
+          <h4>29/8/2025</h4>
           <h3>دراین شب عاشقانه</h3>
           <h4>
             {" "}
