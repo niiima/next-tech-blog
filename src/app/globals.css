@@ -1,33 +1,22 @@
 @import "tailwindcss";
 
+/* Fonts */
 @font-face {
   font-family: "IranNastaliq";
   src: url("/fonts/IranNastaliq.ttf") format("truetype");
-  font-weight: 400;
-  font-style: normal;
   font-display: swap;
 }
-
 @font-face {
   font-family: "Shekasteh";
   src: url("/fonts/Shekasteh.ttf") format("truetype");
-  font-weight: 400;
-  font-style: normal;
   font-display: swap;
 }
 
+/* Theme colors */
 :root {
   --background: #ffffff;
   --foreground: #171717;
 }
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
@@ -35,12 +24,15 @@
   }
 }
 
+/* Base */
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Shekasteh, Helvetica, sans-serif;
+  margin: 0;
 }
 
+/* Typography */
 h1,
 h2,
 h3,
@@ -48,475 +40,22 @@ h4 {
   font-family: "Shekasteh" !important;
 }
 h1 {
-  font-size: 4em;
+  font-size: 5em;
+  color: #674ea7;
 }
 h2 {
-  font-size: 6em;
+  font-size: 4em;
   line-height: 1rem;
 }
 h3 {
   font-size: 3em;
 }
 h4 {
-  font-size: 3em;
+  font-size: 2.6em;
 }
 
-.rings {
-  position: absolute;
-  top: 1%;
-  left: 50%;
-  height: 12em;
-  width: 20em;
-  margin-left: -10em;
-  background-image: url(http://almacog.org/wp-content/uploads/2012/01/weddingrings1.png);
-  background-size: 80% auto;
-  background-repeat: no-repeat;
-}
-
-.heart-logo {
-  /* position: absolute; */
-  /* top: 1%;
-  left: 50%; */
-  height: 12em;
-  width: 13em;
-  /* margin-left: -10em; */
-}
-.sakura {
-  /* background: -webkit-linear-gradient(120deg, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.9));
-  background: linear-gradient(120deg, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.9));*/
-  background: red;
-  pointer-events: none;
-  position: absolute;
-}
-
-.sakura {
-  background: #674ea7;
-}
-
-/*******************************/
-
-body {
-  font-family: Arial, Helvetica, Sans-serif;
-}
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-@media (max-width: 900px) {
-  img {
-    max-width: 30%;
-  }
-}
-
-.top-right-decoration {
-  position: absolute;
-  top: 0;
-  right: 0;
-  display: block;
-}
-
-.top-left-decoration {
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: block;
-}
-
-.title h1 {
-  /* font-family: "Dancing Script", cursive; */
-  font-weight: normal;
-  font-style: normal;
-  /* font-size: 60px; */
-  /* margin: 5px 0; */
-
-  color: #674ea7;
-}
-
-.title h2 {
-  font-weight: normal;
-  font-style: normal;
-  /* margin: 0;
-  padding: 0; */
-  /* font-size: 20px; */
-  /* color: #674ea7; */
-  line-height: 1;
-}
-
-.dance-med {
-  font-family: "Dancing Script", cursive;
-  font-weight: normal;
-  font-style: normal;
-  font-size: 20px;
-  color: #674ea7;
-}
-
-.title h3 {
-  font-weight: 300;
-  /* text-transform: uppercase;*/
-  /* letter-spacing: 5px; */
-  /* font-size: 16px; */
-  /* color: #221320; */
-  margin-top: 100px;
-}
-
-.title p {
-  color: #564861;
-  margin: 30px 0 20px;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  font-size: 12px;
-}
-
-.wrap {
-  display: -webkit-flex;
-  display: flex;
-  -webkit-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  align-items: center;
-  padding: 20px;
-  text-align: center;
-  min-height: 100%;
-}
-
-@-webkit-keyframes fall {
-  0% {
-    opacity: 0.9;
-    top: 0;
-  }
-  100% {
-    opacity: 0.2;
-    top: 100%;
-  }
-}
-
-@keyframes fall {
-  0% {
-    opacity: 0.9;
-    top: 0;
-  }
-  100% {
-    opacity: 0.2;
-    top: 100%;
-  }
-}
-
-@-webkit-keyframes blow-soft-left {
-  0% {
-    margin-left: 0;
-  }
-  100% {
-    margin-left: -50%;
-  }
-}
-
-@keyframes blow-soft-left {
-  0% {
-    margin-left: 0;
-  }
-  100% {
-    margin-left: -50%;
-  }
-}
-
-@-webkit-keyframes blow-medium-left {
-  0% {
-    margin-left: 0;
-  }
-  100% {
-    margin-left: -100%;
-  }
-}
-
-@keyframes blow-medium-left {
-  0% {
-    margin-left: 0;
-  }
-  100% {
-    margin-left: -100%;
-  }
-}
-
-@-webkit-keyframes blow-soft-right {
-  0% {
-    margin-left: 0;
-  }
-  100% {
-    margin-left: 50%;
-  }
-}
-
-@keyframes blow-soft-right {
-  0% {
-    margin-left: 0;
-  }
-  100% {
-    margin-left: 50%;
-  }
-}
-
-@-webkit-keyframes blow-medium-right {
-  0% {
-    margin-left: 0;
-  }
-  100% {
-    margin-left: 100%;
-  }
-}
-
-@keyframes blow-medium-right {
-  0% {
-    margin-left: 0;
-  }
-  100% {
-    margin-left: 100%;
-  }
-}
-
-@-webkit-keyframes sway-0 {
-  0% {
-    -webkit-transform: rotate(-5deg);
-  }
-  40% {
-    -webkit-transform: rotate(28deg);
-  }
-  100% {
-    -webkit-transform: rotate(3deg);
-  }
-}
-
-@keyframes sway-0 {
-  0% {
-    -ms-transform: rotate(-5deg);
-    transform: rotate(-5deg);
-  }
-  40% {
-    -ms-transform: rotate(28deg);
-    transform: rotate(28deg);
-  }
-  100% {
-    -ms-transform: rotate(3deg);
-    transform: rotate(3deg);
-  }
-}
-
-@-webkit-keyframes sway-1 {
-  0% {
-    -webkit-transform: rotate(10deg);
-  }
-  40% {
-    -webkit-transform: rotate(43deg);
-  }
-  100% {
-    -webkit-transform: rotate(15deg);
-  }
-}
-
-@keyframes sway-1 {
-  0% {
-    -ms-transform: rotate(10deg);
-    transform: rotate(10deg);
-  }
-  40% {
-    -ms-transform: rotate(43deg);
-    transform: rotate(43deg);
-  }
-  100% {
-    -ms-transform: rotate(15deg);
-    transform: rotate(15deg);
-  }
-}
-
-@-webkit-keyframes sway-2 {
-  0% {
-    -webkit-transform: rotate(15deg);
-  }
-  40% {
-    -webkit-transform: rotate(56deg);
-  }
-  100% {
-    -webkit-transform: rotate(22deg);
-  }
-}
-
-@keyframes sway-2 {
-  0% {
-    -ms-transform: rotate(15deg);
-    transform: rotate(15deg);
-  }
-  40% {
-    -ms-transform: rotate(56deg);
-    transform: rotate(56deg);
-  }
-  100% {
-    -ms-transform: rotate(22deg);
-    transform: rotate(22deg);
-  }
-}
-
-@-webkit-keyframes sway-3 {
-  0% {
-    -webkit-transform: rotate(25deg);
-  }
-  40% {
-    -webkit-transform: rotate(74deg);
-  }
-  100% {
-    -webkit-transform: rotate(37deg);
-  }
-}
-
-@keyframes sway-3 {
-  0% {
-    -ms-transform: rotate(25deg);
-    transform: rotate(25deg);
-  }
-  40% {
-    -ms-transform: rotate(74deg);
-    transform: rotate(74deg);
-  }
-  100% {
-    -ms-transform: rotate(37deg);
-    transform: rotate(37deg);
-  }
-}
-
-@-webkit-keyframes sway-4 {
-  0% {
-    -webkit-transform: rotate(40deg);
-  }
-  40% {
-    -webkit-transform: rotate(68deg);
-  }
-  100% {
-    -webkit-transform: rotate(25deg);
-  }
-}
-
-@keyframes sway-4 {
-  0% {
-    -ms-transform: rotate(40deg);
-    transform: rotate(40deg);
-  }
-  40% {
-    -ms-transform: rotate(68deg);
-    transform: rotate(68deg);
-  }
-  100% {
-    -ms-transform: rotate(25deg);
-    transform: rotate(25deg);
-  }
-}
-
-@-webkit-keyframes sway-5 {
-  0% {
-    -webkit-transform: rotate(50deg);
-  }
-  40% {
-    -webkit-transform: rotate(78deg);
-  }
-  100% {
-    -webkit-transform: rotate(40deg);
-  }
-}
-
-@keyframes sway-5 {
-  0% {
-    -ms-transform: rotate(50deg);
-    transform: rotate(50deg);
-  }
-  40% {
-    -ms-transform: rotate(78deg);
-    transform: rotate(78deg);
-  }
-  100% {
-    -ms-transform: rotate(40deg);
-    transform: rotate(40deg);
-  }
-}
-
-@-webkit-keyframes sway-6 {
-  0% {
-    -webkit-transform: rotate(65deg);
-  }
-  40% {
-    -webkit-transform: rotate(92deg);
-  }
-  100% {
-    -webkit-transform: rotate(58deg);
-  }
-}
-
-@keyframes sway-6 {
-  0% {
-    -ms-transform: rotate(65deg);
-    transform: rotate(65deg);
-  }
-  40% {
-    -ms-transform: rotate(92deg);
-    transform: rotate(92deg);
-  }
-  100% {
-    -ms-transform: rotate(58deg);
-    transform: rotate(58deg);
-  }
-}
-
-@-webkit-keyframes sway-7 {
-  0% {
-    -webkit-transform: rotate(72deg);
-  }
-  40% {
-    -webkit-transform: rotate(118deg);
-  }
-  100% {
-    -webkit-transform: rotate(68deg);
-  }
-}
-
-@keyframes sway-7 {
-  0% {
-    -ms-transform: rotate(72deg);
-    transform: rotate(72deg);
-  }
-  40% {
-    -ms-transform: rotate(118deg);
-    transform: rotate(118deg);
-  }
-  100% {
-    -ms-transform: rotate(68deg);
-    transform: rotate(68deg);
-  }
-}
-
-@-webkit-keyframes sway-8 {
-  0% {
-    -webkit-transform: rotate(94deg);
-  }
-  40% {
-    -webkit-transform: rotate(136deg);
-  }
-  100% {
-    -webkit-transform: rotate(82deg);
-  }
-}
-
-@keyframes sway-8 {
-  0% {
-    -ms-transform: rotate(94deg);
-    transform: rotate(94deg);
-  }
-  40% {
-    -ms-transform: rotate(136deg);
-    transform: rotate(136deg);
-  }
-  100% {
-    -ms-transform: rotate(82deg);
-    transform: rotate(82deg);
-  }
+.poem p {
+  color: gray;
 }
 
 /* Regular nav */
@@ -542,31 +81,69 @@ nav .brand-logo {
   color: #424242;
 }
 
-/* Mobile nav */
-
-.side-nav li > a {
-  color: #eee;
+.top-right-decoration {
+  position: absolute;
+  top: 0;
+  right: 0;
   display: block;
-  font-size: 14px;
-  font-weight: 400;
-  height: 48px;
-  line-height: 48px;
-  padding: 0 32px;
 }
 
-.side-nav i.material-icons.right {
-  color: #eee;
+.top-left-decoration {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+}
+/* Heart logo: keep aspect ratio */
+.heart-logo {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  aspect-ratio: 1/1;
+  object-fit: contain;
 }
 
+/* Decorative images */
+.top-right-decoration,
+.top-left-decoration {
+  position: absolute;
+  top: 0;
+  display: block;
+  max-width: 100%;
+}
+
+/* RTL text */
 .text-nastealigh {
   font-family: IranNastaliq;
-  /* font-size: 5em; */
+}
+.font-sacramento {
+  font-family: "Sacramento";
+}
+.text-shekasteh {
+  font-family: Shekasteh;
+}
+.main-wrap {
+  padding-top: 10px;
+}
+/* Layout wrapper */
+.wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100%;
 }
 
-.perspective-1000 {
-  perspective: 1000px;
+/* Countdown styling tweaks */
+.countdown-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
 }
 
+/* Flip animation (needed for FlipUnitDigit) */
 @keyframes flipTop {
   0% {
     transform: rotateX(0deg);
@@ -575,7 +152,6 @@ nav .brand-logo {
     transform: rotateX(-90deg);
   }
 }
-
 @keyframes flipBottom {
   0% {
     transform: rotateX(90deg);
@@ -584,19 +160,72 @@ nav .brand-logo {
     transform: rotateX(0deg);
   }
 }
-
 .animate-flipTop {
   animation: flipTop 0.6s forwards;
   backface-visibility: hidden;
   transform-style: preserve-3d;
-  transform-origin: bottom;
-  z-index: 5;
 }
-
 .animate-flipBottom {
   animation: flipBottom 0.6s forwards;
   backface-visibility: hidden;
   transform-style: preserve-3d;
-  transform-origin: top;
-  z-index: 5;
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  .main-wrap {
+    padding-top: 30px;
+  }
+  /* .poem {
+    margin-top: 3em;
+  } */
+  .poem p {
+    font-size: 0.8rem;
+  }
+  .heart-logo {
+    max-width: 5rem;
+  }
+  .title h1 {
+    font-size: 3rem;
+    margin: 0 0.8rem;
+  }
+  .date-box {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+  }
+
+  /* Countdown boxes smaller */
+  .countdown-container {
+    gap: 0.5rem;
+  }
+  .countdown-container > div {
+    padding: 0.4rem;
+    width: 3.5rem;
+  }
+
+  /* Section padding */
+  section {
+    padding: 1rem !important;
+  }
+  .top-right-decoration,
+  .top-left-decoration {
+    max-width: 25%;
+  }
+  .countdown-container {
+    gap: 0.5rem;
+  }
+  .countdown-container > div {
+    padding: 0.5rem;
+    width: 4rem;
+  }
+  h1 {
+    font-size: 2.5em;
+  }
+  h2 {
+    font-size: 3em;
+  }
+  h3,
+  h4 {
+    font-size: 1.8em;
+  }
 }
