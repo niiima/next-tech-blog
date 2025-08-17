@@ -127,7 +127,7 @@ const Countdown = () => {
   if (!timeLeft) {
     return (
       <div className='text-nastealigh text-center text-3xl font-semibold text-green-800'>
-        امروز روز عروسی ماست 🎉
+        قرارمون یادت نره
       </div>
     );
   }

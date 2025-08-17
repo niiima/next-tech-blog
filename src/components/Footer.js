@@ -4,7 +4,7 @@ import { GoLocation } from "react-icons/go";
 
 export default function Footer() {
   return (
-    <footer className='w-full bg-green-900 text-white mt-10 py-6'>
+    <footer className='w-full bg-pink-900/40 text-gray-800 mt-10 py-6'>
       <div className='max-w-6xl mx-auto px-4 flex flex-col items-center text-center gap-3'>
         <GoLocation size={28} className='text-pink-300' />
         <p className='text-lg leading-relaxed' dir='rtl'>

@@ -5,7 +5,7 @@ const InvitationContext = createContext();
 
 export function InvitationProvider({ children }) {
   const invitationText =
-    "با کمال احترام دعوت می‌شوید تا در آیین پیوند ما شرکت فرمایید.";
+    "با کمال احترام دعوت می‌شوید تا در آیین پیوند ما شرکت فرمایید";
 
   return (
     <InvitationContext.Provider value={{ invitationText }}>
