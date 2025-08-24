@@ -91,8 +91,8 @@
 import React, { useState, useEffect } from "react";
 
 const Countdown = () => {
-  // Target date: June 29, 2024 (set to midnight start of that day)
-  const targetDate = new Date("2025-08-28T00:00:00");
+  // Target date: June 29, 2025 (set to midnight start of that day)
+  const targetDate = new Date("2025-08-29T20:00:00");
 
   const calculateTimeLeft = () => {
     const now = new Date();
