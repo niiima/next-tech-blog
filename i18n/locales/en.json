@@ -1,0 +1,177 @@
+{
+  "common": {
+    "home": "Home",
+    "blog": "Blog",
+    "about": "About",
+    "explore_articles": "Explore Articles",
+    "about_us": "About Us",
+    "view_all": "View All",
+    "subscribe": "Subscribe",
+    "subscribed": "Subscribed! ✓",
+    "thanks_subscribing": "Thanks for subscribing! Check your inbox for confirmation.",
+    "enter_email": "Enter your email",
+    "stay_updated": "Stay Updated",
+    "privacy_policy": "Privacy Policy",
+    "terms_of_service": "Terms of Service"
+  },
+  "nav": {
+    "home": "Home",
+    "blog": "Blog",
+    "about": "About"
+  },
+  "hero": {
+    "latest_insights": "Latest insights & stories",
+    "headline1": "Insights on Web Development",
+    "headline2": "& Innovation",
+    "description": "Explore the latest in Next.js, React, Tailwind CSS, and modern web technologies. Stories from our engineering team."
+  },
+  "featured": {
+    "title": "Featured Articles",
+    "subtitle": "Hand-picked stories from our community"
+  },
+  "recent": {
+    "title": "Recent Posts",
+    "subtitle": "Latest articles and tutorials"
+  },
+  "newsletter": {
+    "badge": "Stay Updated",
+    "title": "Subscribe to Our Newsletter",
+    "description": "Get the latest articles and insights delivered to your inbox. No spam, unsubscribe anytime."
+  },
+  "footer": {
+    "description": "Insights on modern web development and innovation.",
+    "product": "Product",
+    "features": "Features",
+    "documentation": "Documentation",
+    "company": "Company",
+    "team": "Team",
+    "careers": "Careers",
+    "resources": "Resources",
+    "newsletter_footer": "Newsletter",
+    "contact": "Contact",
+    "support": "Support",
+    "copyright": "© 2025 DevBlog. All rights reserved."
+  },
+  "blogList": {
+    "header": {
+      "description": "Explore our collection of articles on web development, design, and company culture.",
+      "searchPlaceholder": "Search articles..."
+    },
+    "results": {
+      "article": "article",
+      "articles": "articles",
+      "found": "found"
+    },
+    "noResults": {
+      "title": "No articles found",
+      "description": "Try adjusting your search or filter to find what you're looking for."
+    }
+  },
+  "about": {
+    "badge": "About GraphiQL",
+    "title": "GraphiQL — Showcase Blog by NivNet Web Company",
+    "description": "We are NivNet, a modern web development studio specializing in Next.js, React, Tailwind CSS, and cutting-edge technologies. This blog showcases our expertise, projects, and insights.",
+    "stats": {
+      "projects": "Projects Delivered",
+      "clients": "Happy Clients",
+      "articles": "Articles Published",
+      "uptime": "Uptime"
+    },
+    "valuesSection": {
+      "title": "Our Core Values",
+      "subtitle": "Principles that drive everything we build at NivNet"
+    },
+    "values": {
+      "innovation": {
+        "title": "Innovation",
+        "description": "Always exploring and adopting the latest technologies and best practices."
+      },
+      "quality": {
+        "title": "Code Quality",
+        "description": "Clean, maintainable, and performant code using modern standards."
+      },
+      "performance": {
+        "title": "Performance",
+        "description": "Lightning-fast applications with optimal loading times and smooth interactions."
+      },
+      "security": {
+        "title": "Security",
+        "description": "Industry-leading security practices to protect your data and users."
+      },
+      "design": {
+        "title": "Beautiful Design",
+        "description": "Pixel-perfect, responsive designs that delight users on every device."
+      },
+      "client": {
+        "title": "Client Success",
+        "description": "Your goals are our priority. We deliver solutions that drive real business results."
+      }
+    },
+    "team": {
+      "title": "Meet the NivNet Team",
+      "subtitle": "Passionate developers and designers building the future of the web"
+    },
+    "journey": {
+      "title": "Our Journey",
+      "subtitle": "Key milestones in NivNet's growth and achievements"
+    },
+    "milestones": {
+      "founded": {
+        "title": "NivNet Founded",
+        "description": "Started our journey to build exceptional web experiences"
+      },
+      "growth": {
+        "title": "Rapid Growth",
+        "description": "Expanded team and delivered 50+ successful projects"
+      },
+      "launch": {
+        "title": "GraphiQL Launch",
+        "description": "Launched our showcase blog built with Next.js App Router"
+      },
+      "funding": {
+        "title": "Strategic Partnerships",
+        "description": "Formed key partnerships with leading tech companies"
+      },
+      "present": {
+        "title": "Today",
+        "description": "Continuing to innovate and deliver world-class web solutions"
+      }
+    },
+    "cta": {
+      "title": "Ready to Build Something Amazing?",
+      "description": "Let's discuss your next project and bring your vision to life with modern web technology.",
+      "contact": "Get in Touch",
+      "blog": "Read Our Blog"
+    }
+  },
+  "blogPost": {
+    "back": "Back",
+    "bookmark": "Bookmark article",
+    "share": "Share article",
+    "tableOfContents": "Table of Contents",
+    "relatedPosts": "Related Posts",
+    "comments": "Comments",
+    "commentsComing": "Comments section coming soon",
+    "toc": {
+      "introduction": "Introduction",
+      "features": "Key Features",
+      "practices": "Best Practices",
+      "conclusion": "Conclusion"
+    },
+    "content": {
+      "introduction": "In this comprehensive guide, we'll explore the powerful features and best practices that make modern web development more efficient and enjoyable. Whether you're building a small project or a large-scale application, these insights will help you create better experiences.",
+      "features": "Modern frameworks provide incredible tools out of the box. Server Components, for example, revolutionize how we think about React applications by allowing us to render components on the server and reduce JavaScript bundle sizes dramatically.",
+      "practice1": "Always optimize for performance from the start",
+      "practice2": "Use TypeScript for better type safety and developer experience",
+      "practice3": "Implement proper error handling and loading states",
+      "practice4": "Write tests for critical functionality",
+      "practice5": "Keep components small and focused on a single responsibility",
+      "conclusion": "By following these patterns and leveraging modern tools, you can build fast, scalable applications that delight users and are a joy to maintain. Start experimenting with these concepts in your next project!"
+    },
+    "newsletter": {
+      "title": "Join Our Newsletter",
+      "description": "Get weekly insights delivered to your inbox",
+      "subscribe": "Subscribe Now"
+    }
+  }
+}
